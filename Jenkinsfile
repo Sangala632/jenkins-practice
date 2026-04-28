@@ -16,7 +16,13 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo "Deploying the application in vm"
+                echo "Deploying the application in vm "
+            }
+        }
+
+        stage('Deploy-2') {
+            steps {
+                echo "optional only"
             }
         }
     }
