@@ -29,4 +29,19 @@ pipeline {
         }
     }
 
+    post { 
+        always { 
+            echo 'I will always say Hello again!'
+        }
+
+        success { 
+            echo 'If success say ..I will always say Hello again!'
+        }
+
+        
+        failure { 
+            echo 'If failure say ..I will always say stage is failure!'
+        }
+    }
+
 }
